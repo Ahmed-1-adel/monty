@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 stack_t *create_node(int n)
 {
 	stack_t *node;
+
 	node = malloc(sizeof(stack_t));
 	if (node == NULL)
 		err(4);
@@ -42,7 +43,7 @@ stack_t *create_node(int n)
 void free_nodes(void)
 {
 	stack_t *tmp;
-  stack_t *head = NULL;
+
 	if (head == NULL)
 		return;
 
@@ -63,6 +64,7 @@ void free_nodes(void)
 void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
 {
 	stack_t *tmp;
+
 	if (new_node == NULL || *new_node == NULL)
 		exit(EXIT_FAILURE);
 	if (head == NULL)
@@ -76,4 +78,5 @@ void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
 
 	tmp->next = *new_node;
 	(*new_node)->prev = tmp;
+
 }
