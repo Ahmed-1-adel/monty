@@ -6,7 +6,7 @@
  * @argv: list of arguments
  * Return: always 0
  */
-
+stack_t *head = NULL;
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
