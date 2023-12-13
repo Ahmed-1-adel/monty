@@ -6,9 +6,10 @@
  * @argv: list of arguments
  * Return: always 0
  */
-stack_t *head = NULL;
+
 int main(int argc, char *argv[])
 {
+  stack_t *head = NULL;
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 stack_t *create_node(int n)
 {
 	stack_t *node;
-
+  stack_t *head = NULL;
 	node = malloc(sizeof(stack_t));
 	if (node == NULL)
 		err(4);
@@ -43,7 +44,7 @@ stack_t *create_node(int n)
 void free_nodes(void)
 {
 	stack_t *tmp;
-
+  stack_t *head = NULL;
 	if (head == NULL)
 		return;
 
@@ -64,7 +65,7 @@ void free_nodes(void)
 void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
 {
 	stack_t *tmp;
-
+  stack_t *head = NULL;
 	if (new_node == NULL || *new_node == NULL)
 		exit(EXIT_FAILURE);
 	if (head == NULL)
