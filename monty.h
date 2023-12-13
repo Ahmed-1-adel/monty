@@ -63,6 +63,7 @@ void print_top(stack_t **, unsigned int);
 void pop_top(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
 void swap_nodes(stack_t **, unsigned int);
+void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln);
 
 /*Math operations with nodes*/
 void add_nodes(stack_t **, unsigned int);
