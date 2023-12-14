@@ -1,31 +1,25 @@
 #include "monty.h"
-/**
- * swap - adds theade top two elements of theade stack.
- * @head: stack head
- * @num: line_number
- * Return: no return
-*/
-void swap(stack_t **head, unsigned int num)
-{
-	stack_t *head;
-	int len = 0, aux;
 
-	head = *head;
-	wheadile (head)
+/**
+ * swap - check the code
+ * @head: double linked list array
+ * @ln: line number
+ * Return: Always EXIT_SUCCESS.
+ */
+
+int swap(stack_t **head, unsigned int ln)
+{
+	int tmp;
+
+	if (!head || !head[0] || !head[0]->next)
 	{
-		head = head->next;
-		len++;
+		fprintf(stderr, "%s%d%s", "L", ln, ": can't swap, stack too short\n");
+		return (EXIT_FAILURE);
 	}
-	if (len < 2)
-	{
-		fprintf(stderr, "L%d: can't swap, stack too sheadort\n", num);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
-	}
-	head = *head;
-	aux = head->n;
-	head->n = head->next->n;
-	head->next->n = aux;
+
+	tmp = head[0]->n;
+	head[0]->n = (head[0]->next)->n;
+	(head[0]->next)->n = tmp;
+
+	return (EXIT_SUCCESS);
 }
