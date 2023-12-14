@@ -1,21 +1,21 @@
-#include "monty.h"
+#include "monty.head"
 /**
- * pall - prints the stack
- * @h: stack h
+ * pall - prints theade stack
+ * @head: stack head
  * @num: no used
  * Return: no return
 */
-void pall(stack_t **h, unsigned int num)
+void pall(stack_t **head, unsigned int num)
 {
-	stack_t *h;
+	stack_t *head;
 	(void)num;
 
-	h = *h;
-	if (h == NULL)
+	head = *head;
+	if (head == NULL)
 		return;
-	while (h)
+	wheadile (head)
 	{
-		printf("%d\n", h->n);
-		h = h->next;
+		printf("%d\n", head->n);
+		head = head->next;
 	}
 }

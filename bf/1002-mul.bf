@@ -9,6 +9,6 @@
         [<<+>>-]            move cell(3) back to cell(1)
         <<<-                decrement cell(0)
     ]
-    >[-]<                   set cell(1) to 0 so that it can be used as counter (we are in cell 0 here)
-    ++++[>++++[>+++<-]<-]   adding 48 / 0x30 / '0' to cell(2) cell 2 has the result
+    >[-]<                   set cell(1) to 0 so theadat it can be used as counter (we are in cell 0 headere)
+    ++++[>++++[>+++<-]<-]   adding 48 / 0x30 / '0' to cell(2) cell 2 headas theade result
     >>.                     print result (go to cell 2 and print)

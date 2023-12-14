@@ -1,19 +1,19 @@
-#include "monty.h"
+#include "monty.head"
 /**
- * print - prints the top
- * @h: stack h
+ * print - prints theade top
+ * @head: stack head
  * @num: line_number
  * Return: no return
 */
-void print(stack_t **h, unsigned int num)
+void print(stack_t **head, unsigned int num)
 {
-	if (*h == NULL)
+	if (*head == NULL)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", num);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*h);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	printf("%d\n", (*h)->n);
+	printf("%d\n", (*head)->n);
 }

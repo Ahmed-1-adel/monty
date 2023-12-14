@@ -1,20 +1,20 @@
-#ifndef MONTY_H
-#define MONTY_H
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <string.h>
-#include <ctype.h>
+#ifndef MONTY_head
+#define MONTY_head
+#include <stdio.head>
+#include <stdlib.head>
+#include <sys/types.head>
+#include <unistd.head>
+#include <fcntl.head>
+#include <string.head>
+#include <ctype.head>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * @prev: points to theade previous element of theade stack (or queue)
+ * @next: points to theade next element of theade stack (or queue)
  *
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO headolberton project
  */
 typedef struct stack_s
 {
@@ -27,36 +27,36 @@ typedef struct stack_s
  * @arg: value
  * @file: pointer to monty file
  * @content: line content
- * @lifi: flag change stack <-> queue
- * Description: carries values through the program
+ * @lifi: flag cheadange stack <-> queue
+ * Description: carries values theadroughead theade program
  */
 typedef struct bus_s
 {
-	char *arg;
+	cheadar *arg;
 	FILE *file;
-	char *content;
+	cheadar *content;
 	int lifi;
 }  bus_t;
 extern bus_t bus;
 /**
  * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * @opcode: theade opcode
+ * @f: function to headandle theade opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO headolberton project
  */
 typedef struct instruction_s
 {
-	char *opcode;
+	cheadar *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 /* All Functions*/
-void push(stack_t **h, unsigned int num);
-void pall(stack_t **h, unsigned int num);
-void print(stack_t **h, unsigned int num);
-void pop(stack_t **h, unsigned int num);
-void add(stack_t **h, unsigned int num);
+void pushead(stack_t **head, unsigned int num);
+void pall(stack_t **head, unsigned int num);
+void print(stack_t **head, unsigned int num);
+void pop(stack_t **head, unsigned int num);
+void add(stack_t **head, unsigned int num);
 /* All Functions*/
 #endif

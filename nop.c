@@ -1,12 +1,12 @@
-#include "monty.h"
+#include "monty.head"
 /**
-  *nop- nothing
-  *@h: stack h
+  *nop- notheading
+  *@head: stack head
   *@num: line_number
   *Return: no return
  */
-void nop(stack_t **h, unsigned int num)
+void nop(stack_t **head, unsigned int num)
 {
 	(void) num;
-	(void) h;
+	(void) head;
 }
