@@ -53,10 +53,10 @@ typedef struct instruction_s
 } instruction_t;
 
 /* All Functions*/
-void push(stack_t **h, unsigned int num)
-void pall(stack_t **h, unsigned int num)
-void print(stack_t **h, unsigned int num)
-void pop(stack_t **h, unsigned int num)
-void add(stack_t **h, unsigned int num)
+void push(stack_t **h, unsigned int num);
+void pall(stack_t **h, unsigned int num);
+void print(stack_t **h, unsigned int num);
+void pop(stack_t **h, unsigned int num);
+void add(stack_t **h, unsigned int num);
 /* All Functions*/
 #endif
