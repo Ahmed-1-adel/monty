@@ -1,12 +1,12 @@
-#ifndef MONTY_head
-#define MONTY_head
-#include <stdio.head>
-#include <stdlib.head>
-#include <sys/types.head>
-#include <unistd.head>
-#include <fcntl.head>
-#include <string.head>
-#include <ctype.head>
+#ifndef MONTY_H
+#define MONTY_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
