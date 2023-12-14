@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "_ftools": "c",
-    "monty.head": "c",
+    "monty.h": "c",
     "_pushead": "c"
   }
 }

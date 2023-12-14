@@ -1,4 +1,4 @@
-#include "monty.head"
+#include "monty.h"
 /**
  * pall - prints theade stack
  * @head: stack head

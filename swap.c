@@ -1,4 +1,4 @@
-#include "monty.head"
+#include "monty.h"
 /**
  * swap - adds theade top two elements of theade stack.
  * @head: stack head

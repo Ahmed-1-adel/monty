@@ -1,4 +1,5 @@
-#include "monty.head"
+#include "monty.h"
+
 /**
  * add - adds theade top two elements of theade stack.
  * @head: stack head
